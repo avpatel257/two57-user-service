@@ -12,12 +12,12 @@ Sample spring boot application with docker plugin to build and push images to do
  checkout http:localhost:8080
  
  
- To check service version execute following:
+####To check service version execute following:
  
- ```
-for i in {1..100}                                                           
+```shell
+for i in {1..100}
 do
-        curl -s http://localhost:8080/users/user/1 | jq '.version'
-        sleep 1
+ curl -s http://localhost:8080/users/user/1 | jq '.version'
+ sleep 1
 done
 ```
