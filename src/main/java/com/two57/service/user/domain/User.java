@@ -7,6 +7,8 @@ public class User {
     private String firstName;
     private String lastName;
     private Optional<String> email;
+    private String version = "v2";
+
 
 
     public Long getId() {
@@ -39,5 +41,19 @@ public class User {
 
     public void setEmail(Optional<String> email) {
         this.email = email;
+    }
+
+    /**
+     * @return the version
+     */
+    public String getVersion() {
+        return version;
+    }
+
+    /**
+     * @param version the version to set
+     */
+    public void setVersion(String version) {
+        this.version = version;
     }
 }
